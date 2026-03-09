@@ -1,1 +1,24 @@
-this is code1
+<!DOCTYPE html>
+<html>
+<head>
+<title>Click Game</title>
+</head>
+
+<body>
+
+<h2>Click the Button Game</h2>
+<p>Score: <span id="score">0</span></p>
+
+<button onclick="increaseScore()">Click Me!</button>
+
+<script>
+let score = 0;
+
+function increaseScore() {
+    score++;
+    document.getElementById("score").innerText = score;
+}
+</script>
+
+</body>
+</html>
